@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<body>
+  <!-- Just an image -->
+  <!-- navbar start -->
+  <header class="sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white ">
+    <div class="container d-flex justify-content-start align-items-center p-vertical ps-0">
+        <a class="navbar-brand" href="#">
+          <img src="/assets/img/logo-digitiket.png" alt="">
+        </a>
+        <form id="f-search" action="/v/search" method="GET" class="ms-lg-5 px-1 px-lg-2 w-50">  
+            <div class="input-with-icon">
+                <img class="input-icon" src="./assets/img/magnifying-glass.svg" alt="" width="20px">
+                <input name="keyword" load-key="" type="text" autocomplete="off" placeholder="Temukan Event, Wahana Wisata , Virtual Tour, Lain-lain.">
+            </div>
+        </form>
+
+        <button class="btn btn-login btn-primary bg-purple ms-auto">Login</button>
+      </div>
+
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm p-0 border border-semi">
+      <div class="container d-flex justify-content-between p-0 m-0">
+            <div class="d-flex align-self-end">
+                <ul class="d-flex justify-content-start m-0 p-0">
+                    <li class="d-flex border border-semi py-2 px-4 justify-content-center">
+                        <img src="/assets/img/attraction.svg" alt="" height="27">
+                        <span class="mx-2">Attraction</span>
+                    </li>
+                    <li class="d-flex border border-semi py-2 px-4 justify-content-center">
+                        <img src="/assets/img/event.svg" alt="" height="27">
+                        <span class="mx-2">Event</span>
+                    </li>
+                    <li class="d-flex border border-semi py-2 px-4 justify-content-center">
+                        <img src="/assets/img/icon-virtual-tour.svg" alt="" height="27">
+                        <span class="mx-2">Virtual Tour</span>
+                        <div>
+                            <span class="badge bg-purple">New</span>
+                        </div>
+                    </li>
+                    <li class="d-flex border border-semi py-2 px-4 justify-content-center">
+                        <img src="/assets/img/target.svg" alt="" width="20" >
+                        <span class="mx-2" style="color: #F05A86;">Semarang</span>
+                    </li>
+                </ul>
+            </div>
+            <a class="d-flex justify-content-center btn btn-primary align-items-center bg-purple" style="border: none;">
+                <img src="/assets/img/plus-circular-button.svg" alt="" height="20">
+                <span class="ms-5">Buat Tiket</span>
+            </a>
+        </div>
+  
+        
+        </nav>
+    </header>
+  <!-- navbar end -->
+
+
+  <!-- Carousell & tanggal start -->
+  <div class="container">
+    
+    <div class="row"> 
+      <div class="col-lg-8 card" >
+        <div class="row card-body">
+          <!-- carousell start  -->
+          <div class="col-lg-8">
+              <img src="/assets/img/vt-1.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="col-lg-4">
+              <img src="/assets/img/vt-2.jpg" alt="" class="img-fluid">
+              <img src="/assets/img/vt-3.jpg" alt="" class="img-fluid">
+              <img src="/assets/img/vt-4.jpg" alt="" class="img-fluid">
+          </div>
+          <!-- carousell end  -->
+        </div>
+      </div>
+      <!-- tanggal start  -->
+      <div class="col-lg-4 card p-0">
+        <table class="table table-striped">
+            <thead>
+                Jam Buka
+            </thead>
+            <tbody>
+              <tr>
+                <td>Sunday</td>
+                <td>10:00-17:00</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Monday</td>
+                <td>10:00-17:00</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Tuesday</td>
+                <td>10:00-17:00</td>
+                <td><span class="badge bg-secondary">Today</span></td>
+              </tr>
+              <tr>
+                <td>Wednesday</td>
+                <td>10:00-17:00</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Thursday</td>
+                <td>10:00-17:00</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Friday</td>
+                <td>10:00-17:00</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Saturday</td>
+                <td>10:00-17:00</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="table card-body">
+            <thead>
+                <tr >
+                  <td colspan="3" class="border-bottom">
+                    Informasi Pengguna
+                  </td>
+                </tr>
+            </thead>
+            <tbody>
+              <tr class="border-bottom-0">
+                <td class="border-bottom-0">Masa aktif</td>
+                <td class="border-bottom-0">1 Hari</td>
+                <td class="border-bottom-0"></td>
+              </tr>
+              <tr>
+                <td class="border-bottom-0">Harga</td>
+                <td class="border-bottom-0">IDR 50.000</td>
+                <td class="border-bottom-0"><span class="badge bg-primary">allday</span></td>
+              </tr>
+              <tr>
+                <td class="border-bottom-0">Harga</td>
+                <td class="border-bottom-0">IDR 50.000</td>
+                <td class="border-bottom-0"><span class="badge bg-primary">weekend</span></td>
+              </tr>
+              </tbody>
+              </table>
+      </div>
+      <!-- tanggal end  -->
+    </div>
+  </div>
+
+  <!-- Carousell & tanggal End -->
+
+  <!-- Info start -->
+  <section class="my-2">
+    <!-- alert start -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="alert alert-primary text-secondary m-0" role="alert">
+              <img src="/assets/img/information-logotype-in-a-circle.svg" alt="" width="25px">
+            Free wahana: Kora-kora, Mini Train, Flying Elephant
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- alert end  -->
+    <!-- info content start  -->
+    <div class="container">
+      <div class="row">
+          <div class="col-lg-6">
+              <div class="row">
+                <h1>Virtual Tour Semeru</h1>
+                <p>Fasilitas yang ditawarkan di Water Splash Darmawangsa pengunjung bisa menjadi member dan keuntungannya setiap pembelian tiket masuk mendapatkan potongan harga sebesar 2000 sampai 3000 rupiah dari harga tiket masuk normal. Water Splash Darmawangsa Residence menyediakan 3 kolam renang di antaranya, 1 kolam renang untuk dewasa atau remaja, dan yang 2 kolam renang khusus untuk anak-anak, tersedia pula seluncuran air yang dikategorikan untuk anak-anak karena memiliki ketinggian yang cukup rendah.</p>
+              </div>
+              <div class="row">
+                  <h1>About</h1>
+                  <p>Alamat</p>
+                  <p>Darmawangsa</p>
+                  <p>Jl. Darmawangsa Raya, Satriajaya, Tambun Utara, Bekasi, Jawa Barat 17510,Bekasi, Jawa Barat</p>
+              </div>
+              <div class="row">
+                  <h1>Tiket Water Splash</h1>
+                  <p>Alamat</p>
+                  <p>Darmawangsa</p>
+                  <p>Jl. Darmawangsa Raya, Satriajaya, Tambun Utara, Bekasi, Jawa Barat 17510,Bekasi, Jawa Barat</p>
+              </div>
+              <div class="row">
+                <h1>Peta Lokasi</h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15799.7559331741!2d112.91365271806981!3d-8.107695713287752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd63e89e1d817bb%3A0x9c14d4ed3c488f54!2sGn.%20Semeru!5e0!3m2!1sid!2sid!4v1609229576689!5m2!1sid!2sid" class="img-fluid" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              </div>
+          </div>
+          <div class="col-lg-6">
+              <div class="row">
+                  <h1>Pilih Tiket</h1>
+                  <div class="col-6 text-center">Tentukan Tanggal</div>
+                  <div class="col-6 text-center">Pilih Tiket</div>
+              </div>
+              <div class="row">
+                  <h5>Tiket Dewasa</h5>
+                  <div class="col-6">09 Sep 2020, 06:00-20:30 WIB</div>
+                  <div class="col-6">09 Sep 2020, 06:00-20:30 WIB</div>
+                  <span>Detail Package</span>
+                  
+                  <div class="d-flex justify-content-end">
+                    <p>IDR 40.000</p>
+                    <button type="button" class="btn btn-primary">-</button>
+                    <p>2</p>
+                    <button type="button" class="btn btn-primary">+</button>
+                  </div>
+              </div>
+              <div class="row">
+                <h5>Tiket Anak-Anak</h5>
+                <div class="col-6">09 Sep 2020, 06:00-20:30 WIB</div>
+                <div class="col-6">09 Sep 2020, 06:00-20:30 WIB</div>
+                <span>Detail Package</span>
+                
+                <div class="d-flex justify-content-end">
+                  <p>IDR 40.000</p>
+                  <button type="button" class="btn btn-primary">-</button>
+                  <p>2</p>
+                  <button type="button" class="btn btn-primary">+</button>
+                </div>
+            </div>
+            <div class="row">
+                <h5>Tiket Bayi</h5>
+                <div class="col-6">09 Sep 2020, 06:00-20:30 WIB</div>
+                <div class="col-6">09 Sep 2020, 06:00-20:30 WIB</div>
+                <span>Detail Package</span>
+                
+                <div class="d-flex justify-content-end">
+                  <p>IDR 40.000</p>
+                  <button type="button" class="btn btn-primary">-</button>
+                  <p>2</p>
+                  <button type="button" class="btn btn-primary">+</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="d-flex justify-content-between">
+                        <span>Total</span>
+                        <span>IDR 140.000</span>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <button type="button" class="btn btn-primary bg-purple w-100">Checkout</button>
+                </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <!-- info content end  -->
+  </section>
+  <!-- info end  -->
+
+  <!-- footer start  -->
+
+  <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <h5>Langganan Newsletter</h5>
+                <div class="d-block">
+                    <p>Jadi orang yang pertama tahu info & promosi Wisata, Event, Terbaru. Gratis.</p>
+                </div>
+                <div class="d-block">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Masukan Email" aria-label="Search">
+                      </form>
+                </div>
+                <div class="div">
+                    <h5>Download DigiTiket Apps</h5>
+                    <img src="/assets/img/playstore.png" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <h5>Perusahaan</h5>
+                <ul>
+                    <li>Karir</li>
+                    <li>Blog</li>
+                    <li>Jadi Partner DigiTiket</li>
+                    <li>DigiTiket Press Room</li>
+                    <li>Brand Guidelines</li>
+                    <li>Alamat Kantor</li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <h5>Bantuan</h5>
+                <ul>
+                    <li>Cara Pesan</li>
+                    <li>FAQ</li>
+                    <li>Kebijakan</li>
+                    <li>Kebijakan dan Privasi</li>
+                    <li>Syarat dan Ketentuan</li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+              <!-- <div class="d-flex flex-row"> -->
+                <div class="row">
+                    <h5>Berkolaborasi</h5>
+                    <div class="col">
+                      <img src="/assets/img/KKIB-UNDIP.png" alt="" class="w-75 w-10" >
+                    </div>
+                    <div class="col">
+                      <img src="/assets/img/ristekdikti.png" alt="" class="w-25 w-25">
+                    </div>
+                  </div>
+                <!-- </div> -->
+                <div class="row">
+                    <h5>Metode Pembayaran</h5>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container border border-2">
+      <div class="row">
+        <div class="d-flex justify-content-between">
+          <p>Copyright &copy; 2020 - DigiTiket. All rights reserved.</p>
+          <div>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- footer end -->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+<script src="https://use.fontawesome.com/6073315a9c.js"></script>
+</html>
