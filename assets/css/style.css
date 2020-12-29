@@ -7,7 +7,8 @@
   --text: #505050;
   --footer: #373737;
 }
-body {
+html, body {
+  overflow-x: hidden;
   font-family: "Lato", sans-serif !important;
 }
 
